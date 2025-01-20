@@ -14,6 +14,9 @@
 .text-gray {
     color: #424242;
 }
+.text-color-light {
+    color: #ff900E;
+}
 
 .bg-light {
     background-color: rgba(255, 144, 14, 0.1);
@@ -27,7 +30,18 @@
     border-radius: 5px;
     border: none;
 }
-
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+}
 /* header style */
 
 /* Navbar */
@@ -69,4 +83,54 @@
 .banner-title {
     font-weight: 700;
     font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+
+}
+
+  /* Team and features section styles  */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+
+.Quick-list{
+   font-weight: 500; 
+}
+/* responsive media queries */
+
+@media screen and (max-width: 576px) {
+    .navbar, 
+    .nav-links, 
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+
+}
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+
+    }
+    .our-features{
+        margin: 50px auto;
+    }
 }
